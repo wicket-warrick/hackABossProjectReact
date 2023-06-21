@@ -1,0 +1,158 @@
+.App .editUser {
+  flex-grow: 1;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.App .editUser h2 {
+  margin-left: 2rem;
+}
+.App .editUser .editUserForm {
+  gap: 5rem;
+  margin: 0;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0.25rem 0.25rem;
+  border: none;
+  background-color: transparent;
+  resize: none;
+  outline: none;
+  padding-bottom: 2rem;
+}
+.editUserForm fieldset {
+  border: none;
+  background-color: transparent;
+  resize: none;
+  outline: none;
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+  width: 600px;
+  align-items: center;
+}
+.editUserForm fieldset label,
+.labelImg {
+  font-weight: 500;
+  width: 200px;
+  text-align: center;
+}
+.editUserForm fieldset input,
+.editUserForm fieldset textarea {
+  background-color: var(--main-grey-color);
+  border: 2px solid var(--main-orange-color);
+  width: 500px;
+  padding: 0.25rem 0.5rem;
+}
+.editUserForm fieldset textarea {
+  min-height: 150px;
+}
+.editUserForm button {
+  border: none;
+  padding: 0.25rem 0.75rem;
+  background-color: transparent;
+  font-weight: 500;
+  cursor: pointer;
+  color: var(--main-orange-color);
+  margin-left: 90px;
+}
+
+.App .return {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.App .return h4 {
+  text-align: center;
+  padding: 2rem;
+}
+
+.return button {
+  border: none;
+  padding: 0.25rem 0.75rem;
+  background-color: transparent;
+  font-weight: 500;
+  cursor: pointer;
+  color: #d1603d;
+}
+
+.editUser .error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  margin-left: 90px;
+}
+.editUser .error img {
+  padding-bottom: 1rem;
+}
+@media (max-width: 750px) {
+  .App .editUser h2 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .App .editUser .editUserForm {
+    flex-grow: 1;
+    margin: 0;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.25rem 0.25rem;
+    border: none;
+    background-color: transparent;
+    resize: none;
+    outline: none;
+  }
+  .editUserForm fieldset {
+    border: none;
+    background-color: transparent;
+    resize: none;
+    outline: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90%;
+    margin-bottom: 0.25rem;
+  }
+  .editUserForm fieldset label,
+  .labelImg {
+    font-weight: 500;
+  }
+  .editUserForm fieldset input,
+  .editUserForm fieldset textarea,
+  .editUserForm fieldset select {
+    background-color: #d9d9d9;
+    border: 2px solid var(--main-orange-color);
+    width: 300px;
+    padding: 0.25rem 0.5rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .editUserForm fieldset textarea {
+    min-height: 150px;
+  }
+  .editUserForm button {
+    border: none;
+    padding: 0.25rem 0.75rem;
+    background-color: transparent;
+    font-weight: 500;
+    cursor: pointer;
+    color: #d1603d;
+    margin: 0 auto;
+  }
+  .errorMessage {
+    color: red;
+    font-size: 20px;
+    font-weight: 500;
+    align-self: center;
+    margin-left: 0.25rem;
+  }
+}

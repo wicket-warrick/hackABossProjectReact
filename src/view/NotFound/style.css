@@ -1,0 +1,31 @@
+:root {
+  --main-black-color: #040f0f;
+  --main-orange-color: #d1603d;
+  --main-blue-color: #16697a;
+  --main-white-color: #ffffff;
+
+  --regular-font-size: 20px;
+  --secondary-font-size: 18px;
+  --h3-font-size: 28px;
+  --h2-font-size: 32px;
+  --h1-font-size: 68px;
+}
+.notFoundTitle {
+  margin: 3rem;
+  color: #d1603d;
+  font-size: var(--h1-font-size);
+}
+.notFoundMessage {
+  margin: 3rem;
+  font-size: var(--h2-font-size);
+  font-weight: 500;
+}
+.notFoundLinks {
+  margin: 3rem;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: auto;
+}
+.notFoundLinks a {
+  font-size: var(--h3-font-size);
+}

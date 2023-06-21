@@ -1,0 +1,388 @@
+:root {
+  --main-black-color: #040f0f;
+  --main-orange-color: #d1603d;
+  --main-blue-color: #16697a;
+  --main-white-color: #ffffff;
+  --main-grey-color: #d9d9d9;
+
+  --regular-font-size: 20px;
+  --secondary-font-size: 18px;
+  --h3-font-size: 28px;
+  --h2-font-size: 32px;
+  --h1-font-size: 68px;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header > h1 {
+  margin: 1rem;
+  margin-left: 4rem;
+}
+header > nav section {
+  flex-direction: column;
+  margin-bottom: 0.4rem;
+  display: flex;
+  align-items: center;
+}
+header > nav {
+  align-self: flex-end;
+  margin: 0;
+}
+
+.registerLogin li .login {
+  margin-top: 0.25rem;
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+header > nav > section button {
+  display: flex;
+  align-items: center;
+  border: none;
+  padding: 0.25rem 0.75rem;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+}
+header>nav>section .createNew {
+  color: #d1603d;
+  font-weight: bold;
+}
+header > nav > section .createNew img {
+  margin-left: 0.4rem;
+}
+header > nav > section div {
+  display: flex;
+  align-items: center;
+}
+header > nav > section div .userData {
+  display: flex;
+  align-items: center;
+}
+
+.userData a,
+.userData span {
+  margin-left: 0.4rem;
+}
+.userData button {
+  margin: 0;
+}
+.new {
+  border: 3px solid var(--main-orange-color);
+  padding: 0.5rem;
+  margin-bottom: 3rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.newDetail .new {
+  border: none;
+  flex-grow: 1;
+}
+.newBodyTitle {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  gap: 1rem;
+}
+.newData {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+.newData div {
+  width: 33%;
+  display: flex;
+  justify-content: space-around;
+}
+.topic,
+.author {
+  color: #d1603d;
+  font-weight: 700;
+}
+.newBodyImg {
+  display: flex;
+  justify-content: space-between;
+}
+
+.new img {
+  max-width: 300px;
+  width: 40%;
+  height: 40%;
+  max-height: 300px;
+  border-radius: 10px;
+  align-self: flex-end;
+  margin-bottom: auto;
+}
+.newDetail .new img {
+  max-width: 800px;
+  width: 40%;
+  height: 40%;
+  max-height: 800px;
+  border-radius: 10px;
+  align-self: flex-end;
+  margin-bottom: auto;
+}
+.deleteEdit button,
+.newData button {
+  border: none;
+  padding: 0.25rem 0.75rem;
+  background-color: transparent;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.gitHubLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.gitHubLinks a img {
+  width: 20px;
+}
+.backEndLink {
+  display: flex;
+  align-items: center;
+}
+.frontEndLink {
+  display: flex;
+  align-items: center;
+}
+.linkedInLink {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+}
+.linkedInLink img {
+  width: 15px;
+}
+
+.errorListNews,
+.errorListNewsByVotes {
+  margin: auto;
+}
+.errorListNewsByVotes {
+  flex-direction: column;
+}
+.errorListNewsByVotes h3 {
+  align-self: center;
+  font-size: 24px;
+}
+.error {
+  flex-direction: column;
+}
+.error img {
+  margin: 1rem auto;
+}
+.errorListNewsByVotes .error {
+  width: 50%;
+  margin: 0 auto;
+}
+.errorListNewsByVotes .error img {
+  width: 50%;
+}
+.error h4 {
+  font-weight: 500;
+  font-size: var(--h3-font-size);
+}
+.errorListNewsByVotes .error h4 {
+  font-size: 24px;
+}
+@media (max-width: 1250px) {
+  header > h1 > a {
+    font-size: 40px;
+  }
+  header > h1 {
+    margin-left: 0rem;
+    margin: 0.25rem;
+    margin-top: 0.25rem;
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  header > nav section {
+    flex-direction: column;
+    margin-bottom: 0.2rem;
+    align-items: flex-end;
+    width: 100%;
+  }
+  header > nav {
+    width: 100%;
+    display: flex;
+    margin: 0;
+  }
+  .registerLogin li .login {
+    margin-top: 0.25rem;
+    display: flex;
+    gap: 0.4rem;
+    align-items: center;
+    margin-right: 1rem;
+  }
+  header > nav > section button {
+    display: flex;
+    align-items: center;
+    border: none;
+    padding: 0.25rem 0.75rem;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+  }
+  header > nav > section .createNew img {
+    margin-left: 0.4rem;
+  }
+  header > nav > section > div {
+    display: flex;
+  }
+  header > nav > section > div .userData {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+@media (max-width: 750px) {
+  header > h1 {
+    margin-left: 0rem;
+    margin: 0.25rem;
+    margin-top: 1rem;
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  header > nav section {
+    flex-direction: column;
+    margin-bottom: 0.2rem;
+    align-items: flex-end;
+    width: 100%;
+  }
+  header > nav {
+    width: 100%;
+    display: flex;
+    margin: 0;
+  }
+  .registerLogin li .login {
+    margin-top: 0.25rem;
+    display: flex;
+    gap: 0.4rem;
+    align-items: center;
+    margin-right: 1rem;
+  }
+  header > nav > section button {
+    display: flex;
+    align-items: center;
+    border: none;
+    padding: 0.25rem 0.75rem;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+  }
+  header > nav > section .createNew img {
+    margin-left: 0.4rem;
+  }
+  header > nav > section > div {
+    display: flex;
+  }
+  header > nav > section > div .userData {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .userData a,
+  .userData span {
+    margin-left: 0rem;
+  }
+  .new {
+    border: 3px solid var(--main-orange-color);
+    padding: 0.2rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .newDetail .new {
+    border: none;
+    flex-grow: 1;
+  }
+  .newBodyTitle {
+    display: flex;
+    flex-direction: column;
+    margin: 0.25rem;
+    gap: 0.25rem;
+  }
+  .new .newData {
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  .newData div {
+    width: 33%;
+    display: flex;
+    justify-content: space-around;
+  }
+  .topic,
+  .author {
+    color: #d1603d;
+    font-weight: 700;
+  }
+  .newBodyImg {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .new img {
+    max-width: 300px;
+    width: 40%;
+    height: 40%;
+    max-height: 300px;
+    border-radius: 10px;
+    align-self: flex-end;
+    margin-bottom: auto;
+  }
+  .newDetail .new img {
+    max-width: 800px;
+    width: 40%;
+    height: 40%;
+    max-height: 800px;
+    border-radius: 10px;
+    align-self: flex-end;
+    margin-bottom: auto;
+  }
+  .deleteEdit button,
+  .newData button {
+    border: none;
+    padding: 0.25rem 0.75rem;
+    background-color: transparent;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  .gitHubLinks {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+  }
+  footer > p {
+    display: none;
+  }
+  .linkedInLink {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+  }
+  .linkedInLink img {
+    display: none;
+  }
+}

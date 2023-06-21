@@ -1,0 +1,149 @@
+:root {
+  --main-black-color: #040f0f;
+  --main-orange-color: #d1603d;
+  --main-blue-color: #16697a;
+  --main-white-color: #ffffff;
+  --main-grey-color: #d9d9d9;
+
+  --regular-font-size: 20px;
+  --secondary-font-size: 18px;
+  --h3-font-size: 28px;
+  --h2-font-size: 32px;
+  --h1-font-size: 68px;
+}
+
+.App .loggin {
+  flex-grow: 1;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+.App .loggin h2 {
+  margin-left: 2rem;
+}
+.App .loggin .logginForm {
+  flex-grow: 1;
+  margin: 0;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0.25rem 0.25rem;
+  border: none;
+  background-color: transparent;
+  resize: none;
+  outline: none;
+}
+.logginForm fieldset {
+  border: none;
+  background-color: transparent;
+  resize: none;
+  outline: none;
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+  width: 600px;
+  align-items: center;
+}
+.logginForm fieldset label,
+.labelImg {
+  font-weight: 500;
+}
+.logginForm fieldset input {
+  background-color: #d9d9d9;
+  border: 2px solid var(--main-orange-color);
+  width: 500px;
+  padding: 0.25rem 0.5rem;
+}
+.logginForm fieldset textarea {
+  min-height: 150px;
+}
+.logginForm button {
+  border: none;
+  padding: 0.25rem 0.75rem;
+  background-color: transparent;
+  font-weight: 500;
+  cursor: pointer;
+  color: #d1603d;
+  margin-left: 90px;
+}
+
+.logginForm a {
+  margin-left: 90px;
+}
+
+.loggin .error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 90px;
+}
+.loggin .error img {
+  padding-bottom: 2rem;
+}
+@media (max-width: 750px) {
+  .App .loggin h2 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .App .loggin .logginForm {
+    flex-grow: 1;
+    margin: 0;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.25rem 0.25rem;
+    border: none;
+    background-color: transparent;
+    resize: none;
+    outline: none;
+  }
+  .logginForm fieldset {
+    border: none;
+    background-color: transparent;
+    resize: none;
+    outline: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90%;
+    margin-bottom: 0.25rem;
+  }
+  .logginForm fieldset label,
+  .labelImg {
+    font-weight: 500;
+  }
+  .logginForm fieldset input,
+  .logginForm fieldset textarea,
+  .logginForm fieldset select {
+    background-color: #d9d9d9;
+    border: 2px solid var(--main-orange-color);
+    width: 300px;
+    padding: 0.25rem 0.5rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .logginForm fieldset textarea {
+    min-height: 150px;
+  }
+  .logginForm button {
+    border: none;
+    padding: 0.25rem 0.75rem;
+    background-color: transparent;
+    font-weight: 500;
+    cursor: pointer;
+    color: #d1603d;
+    margin: 0 auto;
+  }
+  .errorMessage {
+    color: red;
+    font-size: 20px;
+    font-weight: 500;
+    align-self: center;
+    margin-left: 0.25rem;
+  }
+}

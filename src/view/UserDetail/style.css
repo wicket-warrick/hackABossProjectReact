@@ -1,0 +1,101 @@
+.App .user {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.App .user {
+  flex-grow: 1;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.App .user .userImage {
+  text-align: center;
+}
+.App .user img {
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  border: solid 2px;
+  border-color: var(--main-orange-color);
+}
+.App .user .userData {
+  width: 45%;
+}
+
+.App .user button,
+.App .createNewAvatar .button {
+  border: none;
+  padding: 0.25rem 0.75rem;
+  background-color: transparent;
+  font-weight: 500;
+  cursor: pointer;
+  color: var(--main-orange-color);
+  padding: 0.25rem 0.5rem;
+}
+
+.App .user .userData {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+.App .user .userData h2 {
+  margin: 1rem 0rem;
+}
+.App .user .userData .createdAt {
+  flex-grow: 1;
+}
+.App .user .createNewAvatar fieldset {
+  width: 500px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.App .user .createNewAvatar fieldset img {
+  border: none;
+  width: 100px;
+  height: 100px;
+}
+.App .user .createNewAvatar input {
+  max-width: 300px;
+}
+.App .user .createNewAvatar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 750px) {
+  .App .user .userData {
+    width: 90%;
+  }
+  .App .user img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    border: solid 2px;
+    border-color: var(--main-orange-color);
+  }
+  .App .user .createNewAvatar fieldset {
+    width: 300px;
+  }
+  .App .user .createNewAvatar fieldset img {
+    width: 75px;
+    height: 75px;
+  }
+  .App .user .createNewAvatar input {
+    max-width: 250px;
+  }
+  .App .user .createNewAvatar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

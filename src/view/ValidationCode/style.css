@@ -1,0 +1,26 @@
+.validation button {
+  border: none;
+  padding: 0.25rem 0.75rem;
+  background-color: transparent;
+  font-weight: 500;
+  cursor: pointer;
+  color: #d1603d;
+}
+
+.validation {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex flex-start;
+  align-items: center;
+}
+
+.validation h4 {
+  padding: 2rem;
+}
+
+.validation .error {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}

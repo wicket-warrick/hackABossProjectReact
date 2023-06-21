@@ -1,0 +1,8 @@
+.newDetail {
+  flex-grow: 1;
+  margin: 0 3rem;
+}
+.deleteEdit button:first-child{
+  color:red;
+  font-weight: bold;
+}
